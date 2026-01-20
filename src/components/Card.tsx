@@ -7,7 +7,7 @@ function Card({ title, description, tags, img, link }: { title: string, descript
                 {!img ? (
                     <span className="text-gray-400 font-medium italic">Project Preview</span>
                 ) : (
-                    <img src={img} alt="" />
+                    <img src={img} alt={title} loading="lazy"/>
                 )}
 
             </div>

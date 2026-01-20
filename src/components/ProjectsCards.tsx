@@ -1,8 +1,6 @@
 import Card from "./Card";
-// import loungeImage from "../../public/img/Screenshot 2026-01-08 233807.png";
-// import resortMapImage from "../../public/img/Screenshot 2026-01-08 233517.png";
-import loungeImage from "../assets/img/Screenshot 2026-01-08 233807.png";
-import resortMapImage from "../assets/img/Screenshot 2026-01-08 233517.png";
+import loungeImage from "../assets/img/Screenshot 2026-01-08 233807.webp";
+import resortMapImage from "../assets/img/Screenshot 2026-01-08 233517.webp";
 function ProjectsCards() {
 
   const projects = [

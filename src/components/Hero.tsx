@@ -1,4 +1,4 @@
-import mypic from '../assets/pic1.png';
+import mypic from '../assets/pic1.webp';
 
 function Hero() {
     return (
@@ -17,6 +17,7 @@ function Hero() {
                                 className="relative rounded-full w-40 h-40 md:w-48 md:h-48 object-cover border-4 border-slate-900 shadow-2xl"
                                 src={mypic}
                                 alt="Romel Cubelo"
+                                loading="lazy"
                             />
                         </div>
                     </div>
