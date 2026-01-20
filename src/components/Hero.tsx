@@ -28,7 +28,7 @@ function Hero() {
                         </h1>
 
                         <p className="mt-6 text-lg leading-relaxed text-gray-400 font-body">
-                            <span className="text-blue-400 font-medium">Junior Web Developer </span>
+                            <span className="text-blue-400 font-medium">Full-stack Web Developer </span>
                             - I build responsive web applications using HTML, CSS, JavaScript, and PHP.
 Familiar with Laravel and basic React.
                         </p>
