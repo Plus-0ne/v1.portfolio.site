@@ -33,7 +33,7 @@ function TechStacks() {
                             <div className="text-4xl mb-3 transition-transform duration-300 group-hover:scale-110">
                                 {skill.icon}
                             </div>
-                            <span className="text-slate-400 font-medium text-sm group-hover:text-white">
+                            <span className="text-ghost-white-inactive font-medium text-sm group-hover:text-white">
                                 {skill.name}
                             </span>
                         </div>

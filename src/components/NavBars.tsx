@@ -5,7 +5,7 @@ function NavBars() {
     const [isOpen, setIsOpen] = useState(false);
 
     return (
-        <nav className="nav-menu shadow-md w-full fixed z-50">
+        <nav className="shadow-md w-full fixed z-50 bg-navy-deep">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div className="flex justify-end h-16 items-center">
                     

@@ -12,7 +12,7 @@ function Hero() {
                     <div className="flex justify-center w-full lg:w-auto mb-8 lg:mb-0">
                         <div className="relative">
                             {/* Added a subtle glow effect to the image to match your dark theme */}
-                            <div className="absolute -inset-1 accent-text-color rounded-full blur opacity-25"></div>
+                            <div className="absolute -inset-1 bg-ocean rounded-full blur opacity-25"></div>
                             <img
                                 className="relative rounded-full w-40 h-40 md:w-48 md:h-48 object-cover border-4 border-slate-900 shadow-2xl"
                                 src={mypic}
@@ -24,17 +24,17 @@ function Hero() {
                     {/* Text Container: Changed lg:w-auto to lg:text-left for better flow */}
                     <div className="text-center lg:text-left max-w-2xl">
                         <h1 className="text-4xl md:text-6xl font-extrabold tracking-tight text-white sm:text-7xl font-heading">
-                            I'm <span className="accent-text-color">Romel Cubelo</span>
+                            I'm <span className="text-ocean">Romel Cubelo</span>
                         </h1>
 
                         <p className="mt-6 text-lg leading-relaxed text-gray-100 font-body">
-                            <span className="accent-text-color font-medium">Full-stack Web Developer </span>
+                            <span className="text-ocean font-medium">Full-stack Web Developer </span>
                             - I build responsive web applications using HTML, CSS, JavaScript, and PHP.
 Familiar with Laravel and basic React.
                         </p>
 
                         <div className="mt-10 flex flex-col sm:flex-row justify-center lg:justify-start gap-4">
-                            <a className="px-8 py-3 accent-bg-color hover:bg-cyan-800 text-white font-semibold rounded-lg transition-all shadow-lg hover:scale-105 cursor-pointer" href='#projectCards'>
+                            <a className="px-8 py-3 bg-ocean hover:bg-ocean-hover text-white font-semibold rounded-lg transition-all shadow-lg hover:scale-105 cursor-pointer" href='#projectCards'>
                                 View Projects
                             </a>
                         </div>
