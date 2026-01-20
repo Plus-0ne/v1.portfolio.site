@@ -23,7 +23,7 @@ function Timeline() {
     return (
         <section id="timeline" className="py-20 bg-navy-deep sectionRow">
             <div className="max-w-6xl mx-auto px-4">
-                <h2 className="text-3xl font-bold text-center mb-16 text-ghost-white">Timeline</h2>
+                <h2 className="text-3xl font-semibold text-center mb-16 text-ghost-white font-heading tracking-tight">Timeline</h2>
 
                 <div className="relative">
                     {/* The Center Line (Desktop only) */}

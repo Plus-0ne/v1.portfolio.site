@@ -1,4 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Plus+Jakarta+Sans:wght@700;800&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Plus+Jakarta+Sans:wght@700;800&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 @import "tailwindcss";
 
 @theme {
@@ -8,15 +9,21 @@
   --color-ocean: #0094C6;
   --color-baltic: #005E7C;
   --color-ink: #040F16;
+
   --color-ghost-white: #F8F8FF;
+  --color-ghost-white-hover : #e9e9f2;
   --color-ghost-white-inactive : #aeaebd;
+  
   /* Hover */
   --color-ocean-hover: #00a7e0;
 }
 .font-heading {
-  font-family: 'Plus Jakarta Sans', sans-serif;
+  /* font-family: 'Plus Jakarta Sans', sans-serif; */
+  font-family: "Montserrat", sans-serif;
+  
 }
 
 .font-body {
-  font-family: 'Inter', sans-serif;
+  /* font-family: 'Inter', sans-serif; */
+  font-family: "Roboto", sans-serif;
 }

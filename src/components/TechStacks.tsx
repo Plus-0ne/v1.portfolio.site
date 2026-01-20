@@ -22,7 +22,7 @@ function TechStacks() {
     return (
         <section id="tech" className="py-20 sectionRow section-primary">
             <div className="max-w-6xl mx-auto px-4">
-                <h2 className="text-3xl font-bold text-center mb-16 text-ghost-white">Tech Stack</h2>
+                <h2 className="text-3xl font-semibold text-center mb-16 text-ghost-white font-heading tracking-tight">Tech Stack</h2>
 
                 <div className="flex flex-wrap justify-center items-center gap-8">
                     {skills.map((skill, index) => (
@@ -33,7 +33,7 @@ function TechStacks() {
                             <div className="text-4xl mb-3 transition-transform duration-300 group-hover:scale-110">
                                 {skill.icon}
                             </div>
-                            <span className="text-ghost-white-inactive font-medium text-sm group-hover:text-white">
+                            <span className="text-ghost-white-inactive font-medium text-sm group-hover:text-white font-body tracking-wide">
                                 {skill.name}
                             </span>
                         </div>

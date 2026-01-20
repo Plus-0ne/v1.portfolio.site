@@ -16,17 +16,17 @@ function Card({ title, description, tags, img, link }: { title: string, descript
             <div className="p-6">
                 <div className="flex flex-wrap gap-2 mb-3">
                     {tags.map((tag) => (
-                        <span key={tag} className="text-[10px] uppercase tracking-wider font-bold px-2 py-1 bg-navy-deep text-ocean rounded">
+                        <span key={tag} className="text-[10px] uppercase tracking-wider font-bold px-2 py-1 bg-navy-deep text-ocean rounded font-body">
                             {tag}
                         </span>
                     ))}
                 </div>
 
-                <h3 className="text-xl font-bold text-ghost-white mb-2 group-hover:text-ocean-hover transition-colors">
+                <h3 className="text-xl font-semibold tracking-tight font-heading text-ghost-white mb-2 group-hover:text-ocean-hover transition-colors">
                     {title}
                 </h3>
 
-                <p className="text-ghost-white-inactive text-sm leading-relaxed">
+                <p className="text-ghost-white-inactive text-sm leading-relaxed font-body tracking-wide">
                     {description}
                 </p>
 
