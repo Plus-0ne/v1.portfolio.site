@@ -20,7 +20,7 @@ function TechStacks() {
     ];
 
     return (
-        <section id="tech" className="py-20 sectionRow section-primary">
+        <section id="tech" className="py-30 sectionRow section-primary">
             <div className="max-w-6xl mx-auto px-4">
                 <h2 className="text-3xl font-semibold text-center mb-16 text-ghost-white font-heading tracking-tight">Tech Stack</h2>
 

@@ -10,7 +10,7 @@ function ProjectsCards() {
   ];
 
   return (
-    <section id="projectCards" className="py-20 sectionRow bg-navy-deep animate__delay-1s">
+    <section id="projectCards" className="py-30 sectionRow bg-navy-deep animate__delay-1s">
       <div className="max-w-7xl mx-auto px-4">
         <h2 className="text-3xl font-semibold text-center mb-16 text-ghost-white font-heading tracking-tight">Featured Projects</h2>
 

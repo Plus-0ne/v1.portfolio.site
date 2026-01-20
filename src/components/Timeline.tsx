@@ -4,24 +4,24 @@ function Timeline() {
             date: "2022 - 2025",
             title: "Full-stack Web Developer",
             company: "Manalo K9 Technologies International Corp.",
-            description: "Develop and maintain dynamic web applications using Laravel.",
+            description: "Developed and maintained dynamic web applications using Laravel, delivering responsive and accessible front-end interfaces with HTML5, CSS, and JavaScript. Optimized backend logic and database performance for scalable and reliable solutions, while collaborating with team members through Git version control and code reviews."
         },
         {
             date: "2019 - 2021",
             title: "Freelance Full-stack Web Developer",
             company: "Wercher Solutions and Resources Labor Service Coop",
-            description: "Developed payroll web application using CodeIgniter 3.",
+            description: "Assisted in the development of PHP-based websites and internal tools, providing maintenance, bug fixes, and feature enhancements for client projects. Collaborated closely with designers and stakeholders to deliver solutions that met project requirements and client expectations.",
         },
         {
             date: "2017 - 2018",
             title: "Graphics assistant & Programmer",
             company: "Skill-Power Institute",
-            description: "Assisted the Graphics Artist and develop desktop application using VB.NET.",
+            description: "Supported the graphics lead in designing and producing tarpaulins and promotional signage for events. Developed a desktop application using VB.NET to automate certificate generation and event reporting, improving efficiency and accuracy.",
         },
     ];
 
     return (
-        <section id="timeline" className="py-20 bg-navy-deep sectionRow">
+        <section id="timeline" className="py-30 bg-navy-deep sectionRow">
             <div className="max-w-6xl mx-auto px-4">
                 <h2 className="text-3xl font-semibold text-center mb-16 text-ghost-white font-heading tracking-tight">Timeline</h2>
 
@@ -41,10 +41,12 @@ function Timeline() {
                                     {/* Left Side Content (Even indices) */}
                                     <div className={`pt-1 md:px-12 ${index % 2 === 0 ? 'block' : 'hidden'}`}>
                                         <div className="pl-8 md:pl-0">
-                                            <span className="text-sm font-bold text-ocean">{exp.date}</span>
-                                            <h3 className="text-xl font-bold text-ghost-white">{exp.title}</h3>
-                                            <p className="text-ghost-white-inactive font-medium">{exp.company}</p>
-                                            <p className="text-gray-500 mt-2 text-sm">{exp.description}</p>
+                                            <span className="text-sm font-bold text-ocean font-body">{exp.date}</span>
+                                            <h3 className="text-xl font-bold text-ghost-white font-heading tracking-tight">{exp.title}</h3>
+                                            <p className="text-ghost-white font-medium text-sm font-body tracking-wide">{exp.company}</p>
+                                            <p className="text-ghost-white-inactive mt-2 text-sm font-body tracking-wide">
+                                                 {exp.description}
+                                            </p>
                                         </div>
                                     </div>
 
@@ -54,10 +56,12 @@ function Timeline() {
                                     {/* Right Side Content (Odd indices) */}
                                     <div className={`pt-1 md:px-12 ${index % 2 !== 0 ? 'block' : 'hidden'}`}>
                                         <div className="pl-8 md:pl-0">
-                                            <span className="text-sm font-bold text-ocean">{exp.date}</span>
-                                            <h3 className="text-xl font-bold text-ghost-white">{exp.title}</h3>
-                                            <p className="text-ghost-white-inactive">{exp.company}</p>
-                                            <p className="text-gray-500 mt-2 text-sm">{exp.description}</p>
+                                            <span className="text-sm font-bold text-ocean font-body">{exp.date}</span>
+                                            <h3 className="text-xl font-bold text-ghost-white font-heading tracking-tight">{exp.title}</h3>
+                                            <p className="text-ghost-white font-medium text-sm font-body tracking-wide">{exp.company}</p>
+                                            <p className="text-ghost-white-inactive mt-2 text-sm font-body tracking-wide">
+                                                 {exp.description}
+                                            </p>
                                         </div>
                                     </div>
 

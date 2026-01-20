@@ -45,7 +45,7 @@ function Hero() {
                             <a className="px-8 py-4 bg-ocean hover:bg-ocean-hover text-slate-950 font-semibold rounded-lg transition-all shadow-lg hover:scale-105 cursor-pointer" href='#projectCards'>
                                 View Projects
                             </a>
-                            <a className="px-8 py-4 bg-ghost-white hover:bg-ghost-white-hover text-slate-950 font-semibold rounded-lg transition-all shadow-lg hover:scale-105 cursor-pointer" href='#projectCards'>
+                            <a className="px-8 py-4 bg-ghost-white hover:bg-ghost-white-hover text-slate-950 font-semibold rounded-lg transition-all shadow-lg hover:scale-105 cursor-pointer" href='#footer'>
                                 Contact me
                             </a>
                         </div>
