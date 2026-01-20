@@ -1,4 +1,4 @@
-import mypic from '../assets/pic1.webp';
+import mypic from '../assets/2x2_pic_500x500.webp';
 
 function Hero() {
     return (
