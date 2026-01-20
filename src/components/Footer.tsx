@@ -5,8 +5,8 @@ function Footer() {
   const currentYear = new Date().getFullYear();
 
   return (
-    <footer className="w-full bg-slate-950 border-t border-slate-800 pt-16 pb-8">
-      <div className="max-w-6xl mx-auto px-4">
+    <footer className="w-full section-primary py-20">
+      <div className="max-w-6xl mx-auto">
         <div className="flex flex-col md:flex-row justify-between items-start md:items-center gap-8 pb-12">
           
           {/* Logo & Tagline */}

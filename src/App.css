@@ -8,3 +8,25 @@
   opacity: 1;
   transform: translateY(0);
 }
+.body {
+  background-color: var(--bg-primary-color);
+}
+.nav-menu {
+  background-color: var(--bg-secondary-color);
+}
+.accent-bg-color {
+  background-color:  var(--accent-color);
+}
+.accent-text-color {
+  color: var(--accent-color);
+}
+
+.section-primary {
+
+  background-color: var(--bg-primary-color);
+
+}
+
+.section-secondary {
+  background-color: var(--bg-secondary-color);
+}

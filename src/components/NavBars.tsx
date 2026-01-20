@@ -5,24 +5,24 @@ function NavBars() {
     const [isOpen, setIsOpen] = useState(false);
 
     return (
-        <nav className="bg-white shadow-md w-full fixed z-50">
+        <nav className="nav-menu shadow-md w-full fixed z-50">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div className="flex justify-end h-16 items-center">
                     
 
                     {/* Desktop Menu */}
                     <div className="hidden md:flex space-x-8">
-                        <a href="#home" className="text-gray-700 hover:text-blue-600 font-medium">Home</a>
-                        <a href="#projectCards" className="text-gray-700 hover:text-blue-600 font-medium">Projects</a>
-                        <a href="#tech" className="text-gray-700 hover:text-blue-600 font-medium">Tech Stack</a>
-                        <a href="#timeline" className="text-gray-700 hover:text-blue-600 font-medium">Timeline</a>
+                        <a href="#home" className="text-gray-100 hover:text-blue-300 font-medium">Home</a>
+                        <a href="#projectCards" className="text-gray-100 hover:text-blue-300 font-medium">Projects</a>
+                        <a href="#tech" className="text-gray-100 hover:text-blue-300 font-medium">Tech Stack</a>
+                        <a href="#timeline" className="text-gray-100 hover:text-blue-300 font-medium">Timeline</a>
                     </div>
 
                     {/* Mobile Menu Button */}
                     <div className="md:hidden flex items-center">
                         <button
                             onClick={() => setIsOpen(!isOpen)}
-                            className="text-gray-700 hover:text-blue-600 focus:outline-none"
+                            className="text-gray-100 hover:text-blue-300 focus:outline-none"
                         >
                             <svg className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                 {isOpen ? (
@@ -38,18 +38,18 @@ function NavBars() {
 
             {/* Mobile Menu Dropdown */}
             {isOpen && (
-                <div className="md:hidden bg-gray-50 border-t border-gray-200">
+                <div className="md:hidden">
                     <div className="px-2 pt-2 pb-3 space-y-1">
-                        <a href="#home" className="block px-3 py-2 text-gray-700 hover:bg-blue-50 hover:text-blue-600 rounded-md">
+                        <a href="#home" className="block px-3 py-2 text-gray-100 hover:text-blue-300 rounded-md">
                             Home
                         </a>
-                        <a href="#projectCards" className="block px-3 py-2 text-gray-700 hover:bg-blue-50 hover:text-blue-600 rounded-md">
+                        <a href="#projectCards" className="block px-3 py-2 text-gray-100 hover:text-blue-300 rounded-md">
                             Projects
                         </a>
-                        <a href="#tech" className="block px-3 py-2 text-gray-700 hover:bg-blue-50 hover:text-blue-600 rounded-md">
+                        <a href="#tech" className="block px-3 py-2 text-gray-100 hover:text-blue-300 rounded-md">
                             Tech Stack
                         </a>
-                        <a href="#timeline" className="block px-3 py-2 text-gray-700 hover:bg-blue-50 hover:text-blue-600 rounded-md">
+                        <a href="#timeline" className="block px-3 py-2 text-gray-100 hover:text-blue-300 rounded-md">
                             Timeline
                         </a>
                         

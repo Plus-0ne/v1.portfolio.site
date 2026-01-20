@@ -12,7 +12,7 @@ function ProjectsCards() {
   ];
 
   return (
-    <section id="projectCards" className="py-20 bg-slate-900 sectionRow animate__delay-1s">
+    <section id="projectCards" className="py-20 section-secondary sectionRow animate__delay-1s">
       <div className="max-w-7xl mx-auto px-4">
         <h2 className="text-3xl font-bold text-center mb-12 dark:text-white">Featured Projects</h2>
 

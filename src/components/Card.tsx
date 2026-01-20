@@ -1,7 +1,7 @@
 function Card({ title, description, tags, img, link }: { title: string, description: string, tags: string[], img: string, link: string }) {
 
     return (
-        <div className="group relative bg-white dark:bg-slate-800 border border-gray-200 dark:border-slate-700 rounded-2xl overflow-hidden hover:shadow-xl transition-all duration-300 hover:scale-105 cursor-pointer">
+        <div className="group relative bg-black border border-gray-200 dark:border-slate-700 rounded-2xl overflow-hidden hover:shadow-xl transition-all duration-300 hover:scale-105 cursor-pointer">
             {/* Image Placeholder */}
             <div className="h-48 bg-gray-100 dark:bg-slate-700 flex items-center justify-center">
                 {/* <span className="text-gray-400 dark:text-slate-500 font-medium italic">Project Preview</span> */}

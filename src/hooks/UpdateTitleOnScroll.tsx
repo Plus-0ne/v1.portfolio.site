@@ -27,7 +27,7 @@ export function UpdateTitleOnScroll() {
           const el = entry.target as HTMLElement;
 
           // If the section is taking up 50% or more of the screen
-          if (entry.isIntersecting && entry.intersectionRatio >= 0.2) {
+          if (entry.isIntersecting && entry.intersectionRatio >= 0.3) {
 
             const newTitle = titleMap[entry.target.id];
 
@@ -44,7 +44,7 @@ export function UpdateTitleOnScroll() {
         });
       },
       {
-        threshold: 0.2
+        threshold: 0.3
       }
 
 
@@ -55,7 +55,7 @@ export function UpdateTitleOnScroll() {
     requestAnimationFrame(() => {
       const sections = document.querySelectorAll<HTMLElement>(".sectionRow");
       sections.forEach((section, index) => {
-        section.dataset.delay = (index * 0.1).toString(); // stagger 0.2s per section
+        section.dataset.delay = (index * 0.3).toString(); // stagger 0.2s per section
         observer.observe(section);
       });
     });

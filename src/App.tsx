@@ -14,7 +14,7 @@ function App() {
 
   return (
     <>
-      <div className='flex flex-col bg-slate-900'>
+      <div className='flex flex-col body'>
         <NavBars/>
         <Hero/>
         <ProjectsCards/>
