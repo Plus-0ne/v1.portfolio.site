@@ -2,7 +2,7 @@ import mypic from '../assets/pic1.png';
 
 function Hero() {
     return (
-        <section id='home' className="relative w-full h-dvh lg:h-auto py-20 lg:py-50 transition-colors duration-300 mt-16 sectionRow section-primary">
+        <section id='home' className="relative w-full py-20 lg:py-50 transition-colors duration-300 mt-16 sectionRow section-primary">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 
                 {/* Added items-center to the parent so the image and text align vertically */}

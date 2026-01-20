@@ -22,7 +22,7 @@ function TechStacks() {
     return (
         <section id="tech" className="py-20 sectionRow section-primary">
             <div className="max-w-6xl mx-auto px-4">
-                <h2 className="text-3xl font-bold text-center mb-12 text-white">Tech Stack</h2>
+                <h2 className="text-3xl font-bold text-center mb-16 text-ghost-white">Tech Stack</h2>
 
                 <div className="flex flex-wrap justify-center items-center gap-8">
                     {skills.map((skill, index) => (
