@@ -1,4 +1,5 @@
 import mypic from '../assets/2x2_pic_500x500.webp';
+import smMyPic from '../assets/2x2_pic_200x200.webp';
 
 function Hero() {
     return (
@@ -13,12 +14,13 @@ function Hero() {
                         <div className="relative">
                             {/* Added a subtle glow effect to the image to match your dark theme */}
                             <div className="absolute -inset-1 bg-ocean rounded-full blur opacity-25"></div>
-                            <img
-                                className="relative rounded-full w-40 h-40 md:w-48 md:h-48 object-cover border-4 border-slate-900 shadow-2xl"
-                                src={mypic}
+                            <img className="relative rounded-full w-40 h-40 md:w-48 md:h-48 object-cover border-4 border-slate-900 shadow-2xl" src={mypic}
+                                srcSet={`${smMyPic} 480w , ${mypic} 481w`}
+                                sizes="(max-width: 480px),(min-width: 481px)"
                                 alt="Romel Cubelo"
-                                loading="lazy"
-                            />
+                                loading="lazy" />
+
+
                         </div>
                     </div>
 
@@ -31,7 +33,7 @@ function Hero() {
                         <p className="mt-6 text-lg leading-relaxed text-gray-100 font-body">
                             <span className="text-ocean font-medium">Full-stack Web Developer </span>
                             - I build responsive web applications using HTML, CSS, JavaScript, and PHP.
-Familiar with Laravel and basic React.
+                            Familiar with Laravel and basic React.
                         </p>
 
                         <div className="mt-10 flex flex-col sm:flex-row justify-center lg:justify-start gap-4">
