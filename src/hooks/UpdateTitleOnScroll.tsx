@@ -18,47 +18,49 @@ export function UpdateTitleOnScroll() {
       timeline: "Timeline"
     };
 
-    const animationObserver = new IntersectionObserver(
-      (entries, observer) => {
-        entries.forEach((entry) => {
-          if (!entry.isIntersecting) return;
+    if (typeof window !== 'undefined') {
+      const animationObserver = new IntersectionObserver(
+        (entries, observer) => {
+          entries.forEach((entry) => {
+            if (!entry.isIntersecting) return;
 
-          const el = entry.target as HTMLElement;
+            const el = entry.target as HTMLElement;
 
-          const delay = el.dataset.delay || "0";
-          el.style.setProperty("--animate-delay", `${delay}s`);
+            const delay = el.dataset.delay || "0";
+            el.style.setProperty("--animate-delay", `${delay}s`);
 
-          el.classList.add("animate__animated", "animate__fadeInUp");
-          observer.unobserve(el); // animate ONCE
-        });
-      },
-      {
-        threshold: 0.15
-      }
-    );
+            el.classList.add("animate__animated", "animate__fadeInUp");
+            observer.unobserve(el); // animate ONCE
+          });
+        },
+        {
+          threshold: 0.15
+        }
+      );
 
-    const titleObserver = new IntersectionObserver(
-      (entries) => {
-        const visible = entries.filter(e => e.isIntersecting);
-        if (visible.length === 0) return;
+      const titleObserver = new IntersectionObserver(
+        (entries) => {
+          const visible = entries.filter(e => e.isIntersecting);
+          if (visible.length === 0) return;
 
-        const topMost = visible.reduce((prev, curr) =>
-          curr.boundingClientRect.top < prev.boundingClientRect.top
-            ? curr
-            : prev
-        );
+          const topMost = visible.reduce((prev, curr) =>
+            curr.boundingClientRect.top < prev.boundingClientRect.top
+              ? curr
+              : prev
+          );
 
-        const el = topMost.target as HTMLElement;
-        const newTitle = titleMap[el.id];
+          const el = topMost.target as HTMLElement;
+          const newTitle = titleMap[el.id];
 
-        if (newTitle) document.title = newTitle;
-      },
-      {
-        threshold: 0,
-        rootMargin: "-20% 0px -50% 0px"
-      }
-    );
-    // Wait for first paint before observing
+          if (newTitle) document.title = newTitle;
+        },
+        {
+          threshold: 0,
+          rootMargin: "-20% 0px -50% 0px"
+        }
+      );
+
+      // Wait for first paint before observing
 
     requestAnimationFrame(() => {
       const sections = document.querySelectorAll<HTMLElement>(".sectionRow");
@@ -73,5 +75,8 @@ export function UpdateTitleOnScroll() {
       titleObserver.disconnect();
       animationObserver.disconnect();
     };
+    }
+
+    
   }, []);
 }

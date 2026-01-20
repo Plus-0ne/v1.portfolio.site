@@ -1,4 +1,3 @@
-import './App.css';
 import NavBars from './components/NavBars';
 import Hero from './components/Hero';
 import ProjectsCards from './components/ProjectsCards';
@@ -6,9 +5,11 @@ import TechStacks from './components/TechStacks';
 import Timeline from './components/Timeline';
 import Footer from './components/Footer';
 import { UpdateTitleOnScroll } from './hooks/UpdateTitleOnScroll';
+import './index.css';
+import './App.css';
 import "animate.css";
 
-function App() {
+export default function App() {
 
   UpdateTitleOnScroll();
 
@@ -25,5 +26,3 @@ function App() {
     </>
   )
 }
-
-export default App
