@@ -3,9 +3,9 @@ function Card({ title, description, tags, img, link }: { title: string, descript
     return (
         <div className="group relative bg-prussian border border-baltic rounded-2xl overflow-hidden hover:shadow-xl transition-all duration-300 hover:scale-105 cursor-pointer">
             {/* Image Placeholder */}
-            <div className="h-48 bg-gray-100 dark:bg-slate-700 flex items-center justify-center">
+            <div className="h-48 bg-gray-100 flex items-center justify-center">
                 {!img ? (
-                    <span className="text-gray-400 font-medium italic">Project Preview</span>
+                    <span className="text-slate-600 font-medium italic">Project Preview</span>
                 ) : (
                     <img src={img} alt={title} loading="lazy"/>
                 )}
@@ -30,7 +30,7 @@ function Card({ title, description, tags, img, link }: { title: string, descript
                     {description}
                 </p>
 
-                <a href={link} className="mt-5 inline-flex items-center text-ocean dark:text-blue-400 font-semibold text-sm cursor-pointer px-4 py-2 rounded-lg transition-all duration-300 hover:bg-blue-400 hover:text-white hover:w-auto" target="_blank">
+                <a href={link} className="mt-5 inline-flex items-center bg-ocean text-slate-950 font-semibold text-sm cursor-pointer px-4 py-2 rounded-lg transition-all duration-300 hover:bg-ocean-hover hover:text-slate-950 hover:w-auto" target="_blank" aria-label={`Visit this page ${title}`}>
                     <span>View</span>
                     <svg className="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 5l7 7-7 7"></path>

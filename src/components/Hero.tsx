@@ -35,7 +35,7 @@ Familiar with Laravel and basic React.
                         </p>
 
                         <div className="mt-10 flex flex-col sm:flex-row justify-center lg:justify-start gap-4">
-                            <a className="px-8 py-3 bg-ocean hover:bg-ocean-hover text-white font-semibold rounded-lg transition-all shadow-lg hover:scale-105 cursor-pointer" href='#projectCards'>
+                            <a className="px-8 py-4 bg-ocean hover:bg-ocean-hover text-slate-950 font-semibold rounded-lg transition-all shadow-lg hover:scale-105 cursor-pointer" href='#projectCards'>
                                 View Projects
                             </a>
                         </div>

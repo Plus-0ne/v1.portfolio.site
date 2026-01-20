@@ -15,14 +15,14 @@ export default function App() {
 
   return (
     <>
-      <div className='flex flex-col bg-prussian'>
+      <main className='flex flex-col bg-prussian'>
         <NavBars/>
         <Hero/>
         <ProjectsCards/>
         <TechStacks/>
         <Timeline/>
         <Footer/>
-      </div>
+      </main>
     </>
   )
 }
