@@ -1,6 +1,5 @@
-@import "tailwindcss";
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Plus+Jakarta+Sans:wght@700;800&display=swap');
-
+@import "tailwindcss";
 @theme {
   /* This tells Tailwind to use the .dark class for dark mode */
   --variant-dark: .dark &;

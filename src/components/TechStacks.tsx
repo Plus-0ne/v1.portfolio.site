@@ -1,9 +1,6 @@
 import { FaBootstrap, FaCss3, FaGit, FaHtml5, FaReact } from "react-icons/fa";
 import { SiCodeigniter, SiJavascript, SiJquery,  SiLaravel,  SiPhp,  SiTailwindcss, SiTypescript, SiVite } from "react-icons/si";
 
-
-
-
 function TechStacks() {
 
     const skills = [
@@ -23,7 +20,7 @@ function TechStacks() {
     ];
 
     return (
-        <section className="py-20 bg-slate-950">
+        <section id="tech" className="py-20 bg-slate-950 sectionRow">
             <div className="max-w-6xl mx-auto px-4">
                 <h2 className="text-3xl font-bold text-center mb-12 text-white">Tech Stack</h2>
 

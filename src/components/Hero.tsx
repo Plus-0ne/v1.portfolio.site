@@ -2,7 +2,7 @@ import mypic from '../assets/pic1.png';
 
 function Hero() {
     return (
-        <section className="relative w-full py-20 lg:py-50 bg-slate-950 transition-colors duration-300 mt-16">
+        <section id='home' className="relative w-full h-dvh py-20 lg:py-50 bg-slate-950 transition-colors duration-300 mt-16 sectionRow">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 
                 {/* Added items-center to the parent so the image and text align vertically */}
@@ -28,14 +28,15 @@ function Hero() {
                         </h1>
 
                         <p className="mt-6 text-lg leading-relaxed text-gray-400 font-body">
-                            <span className="text-blue-400 font-medium">Full-Stack Developer & Laravel Expert</span>
-                            — 5+ years of experience building end-to-end web applications. Expert in PHP/Laravel with a proven track record of delivering responsive, mobile-first interfaces.
+                            <span className="text-blue-400 font-medium">Junior Web Developer </span>
+                            - I build responsive web applications using HTML, CSS, JavaScript, and PHP.
+Familiar with Laravel and basic React.
                         </p>
 
                         <div className="mt-10 flex flex-col sm:flex-row justify-center lg:justify-start gap-4">
-                            <button className="px-8 py-3 bg-blue-600 hover:bg-blue-700 text-white font-semibold rounded-lg transition-all shadow-lg hover:shadow-blue-500/50">
+                            <a className="px-8 py-3 bg-blue-600 hover:bg-blue-700 text-white font-semibold rounded-lg transition-all shadow-lg hover:shadow-blue-500/50 cursor-pointer" href='#projectCards'>
                                 View Projects
-                            </button>
+                            </a>
                             <button className="px-8 py-3 border-2 border-gray-700 text-gray-300 font-semibold rounded-lg hover:bg-gray-800 transition-all">
                                 Contact Me
                             </button>

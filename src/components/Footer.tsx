@@ -1,4 +1,5 @@
-import { FaFacebook, FaGithub } from "react-icons/fa";
+import { FaGithub } from "react-icons/fa";
+import { JobstreetLogo } from "../assets/icons/JobstreetLogo";
 
 function Footer() {
   const currentYear = new Date().getFullYear();
@@ -23,10 +24,10 @@ function Footer() {
             <h3 className="text-white font-semibold uppercase tracking-wider text-xs">Socials</h3>
             <div className="flex gap-5">
               <a href="#" className="text-gray-400 hover:text-blue-400 transition-colors">
-                <FaGithub size={20} />
+                <FaGithub className="w-7 h-7" />
               </a>
               <a href="#" className="text-gray-400 hover:text-blue-400 transition-colors">
-                <FaFacebook size={20} />
+                <JobstreetLogo className="w-7 h-7"/>
               </a>
             </div>
           </div>

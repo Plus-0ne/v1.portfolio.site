@@ -1,0 +1,10 @@
+.sectionRow {
+  opacity: 0;
+  transform: translateY(30px); /* start offset matches Animate.css */
+}
+
+/* Animate.css will override this on animation */
+.sectionRow.animate__animated {
+  opacity: 1;
+  transform: translateY(0);
+}

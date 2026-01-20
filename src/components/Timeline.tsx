@@ -21,7 +21,7 @@ function Timeline() {
     ];
 
     return (
-        <section className="py-20 bg-slate-900">
+        <section id="timeline" className="py-20 bg-slate-900 sectionRow">
             <div className="max-w-6xl mx-auto px-4">
                 <h2 className="text-3xl font-bold text-center mb-16 dark:text-white">Timeline</h2>
 

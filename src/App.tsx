@@ -1,5 +1,3 @@
-
-import { useEffect } from 'react';
 import './App.css';
 import NavBars from './components/NavBars';
 import Hero from './components/Hero';
@@ -7,16 +5,16 @@ import ProjectsCards from './components/ProjectsCards';
 import TechStacks from './components/TechStacks';
 import Timeline from './components/Timeline';
 import Footer from './components/Footer';
+import { UpdateTitleOnScroll } from './hooks/UpdateTitleOnScroll';
+import "animate.css";
 
 function App() {
 
-  useEffect(() => {
-    document.title = "Home";
-  });
+  UpdateTitleOnScroll();
 
   return (
     <>
-      <div className='flex flex-col'>
+      <div className='flex flex-col bg-slate-900'>
         <NavBars/>
         <Hero/>
         <ProjectsCards/>
