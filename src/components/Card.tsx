@@ -7,13 +7,13 @@ function Card({ title, description, tags, img, link }: { title: string, descript
                 {!img ? (
                     <span className="text-slate-600 font-medium italic">Project Preview</span>
                 ) : (
-                    <img src={img} alt={title} loading="lazy"/>
+                    <img className="object-cover w-full h-full" src={img} alt={title} loading="lazy" />
                 )}
 
             </div>
 
             {/* Content */}
-            <div className="p-6">
+            <div className="flex flex-col p-6">
                 <div className="flex flex-wrap gap-2 mb-3">
                     {tags.map((tag) => (
                         <span key={tag} className="text-[10px] uppercase tracking-wider font-bold px-2 py-1 bg-navy-deep text-ocean rounded font-body">
@@ -30,12 +30,20 @@ function Card({ title, description, tags, img, link }: { title: string, descript
                     {description}
                 </p>
 
-                <a href={link} className="mt-5 inline-flex items-center bg-ocean text-slate-950 font-semibold text-sm cursor-pointer px-4 py-2 rounded-lg transition-all duration-300 hover:bg-ocean-hover hover:text-slate-950 hover:w-auto" target="_blank" aria-label={`Visit this page ${title}`}>
-                    <span>View</span>
-                    <svg className="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 5l7 7-7 7"></path>
-                    </svg>
-                </a>
+                <div className="flex flex-row gap-2 mt-5">
+                    <a href={link} className="mt-5 inline-flex items-center bg-ocean text-slate-950 font-semibold text-sm cursor-pointer px-4 py-2 rounded-lg transition-all duration-300 hover:bg-ocean-hover hover:text-slate-950 hover:w-auto" target="_blank" aria-label={`Visit this page ${title}`}>
+                        <span>View</span>
+                        <svg className="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 5l7 7-7 7"></path>
+                        </svg>
+                    </a>
+                    <a href={link} className="mt-5 inline-flex items-center bg-ghost-white text-slate-950 font-semibold text-sm cursor-pointer px-4 py-2 rounded-lg transition-all duration-300 hover:bg-ghost-white-hover hover:text-slate-950 hover:w-auto" target="_blank" aria-label={`Visit this page ${title}`}>
+                        <span>More details</span>
+                        <svg className="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 5l7 7-7 7"></path>
+                        </svg>
+                    </a>
+                </div>
             </div>
         </div>
     );
