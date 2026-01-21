@@ -38,7 +38,7 @@ function ProjectsCards() {
 
   return (
     <section id="projectCards" className="py-35 sectionRow bg-navy-deep">
-      <div className="max-w-7xl mx-auto px-4" data-aos="fade-up" data-aos-anchor-placement={isMobile ? "center-bottom" : "top-center"} data-aos-anchor="#projectCards">
+      <div className="max-w-7xl mx-auto px-4" data-aos="fade-up" data-aos-anchor-placement={isMobile ? "center-center" : "top-center"} {...(isMobile ? { "data-aos-anchor": "#home" } : {})}>
         <h2 className="text-3xl font-semibold text-center mb-16 text-ghost-white font-heading tracking-tight">Featured Projects</h2>
 
         {/* The Grid */}
