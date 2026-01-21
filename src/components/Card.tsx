@@ -37,12 +37,12 @@ function Card({ title, description, tags, img, link }: { title: string, descript
                             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 5l7 7-7 7"></path>
                         </svg>
                     </a>
-                    <a href={link} className="mt-5 inline-flex items-center bg-ghost-white text-slate-950 font-semibold text-sm cursor-pointer px-4 py-2 rounded-lg transition-all duration-300 hover:bg-ghost-white-hover hover:text-slate-950 hover:w-auto" target="_blank" aria-label={`Visit this page ${title}`}>
+                    {/* <a href={link} className="mt-5 inline-flex items-center bg-ghost-white text-slate-950 font-semibold text-sm cursor-pointer px-4 py-2 rounded-lg transition-all duration-300 hover:bg-ghost-white-hover hover:text-slate-950 hover:w-auto" target="_blank" aria-label={`Visit this page ${title}`}>
                         <span>More details</span>
                         <svg className="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 5l7 7-7 7"></path>
                         </svg>
-                    </a>
+                    </a> */}
                 </div>
             </div>
         </div>
