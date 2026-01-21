@@ -1,4 +1,19 @@
+import { useEffect, useState } from "react";
+
 function Timeline() {
+
+    const [isMobile, setIsMobile] = useState(false);
+    
+      useEffect(() => {
+        // runs only in the browser
+        const checkMobile = () => setIsMobile(window.innerWidth < 768);
+    
+        checkMobile(); // initial check
+        window.addEventListener("resize", checkMobile);
+    
+        return () => window.removeEventListener("resize", checkMobile);
+      }, []);
+
     const experiences = [
         {
             date: "2022 - 2025",
@@ -22,7 +37,7 @@ function Timeline() {
 
     return (
         <section id="timeline" className="py-35 bg-navy-deep sectionRow">
-            <div className="max-w-6xl mx-auto px-4">
+            <div className="max-w-6xl mx-auto px-4" data-aos="fade-up" data-aos-anchor-placement="center-bottom">
                 <h2 className="text-3xl font-semibold text-center mb-16 text-ghost-white font-heading tracking-tight">Timeline</h2>
 
                 <div className="relative">
@@ -39,7 +54,7 @@ function Timeline() {
                                 <div className={`grid grid-cols-1 md:grid-cols-2 w-full ${index % 2 === 0 ? 'md:text-right' : ''}`}>
 
                                     {/* Left Side Content (Even indices) */}
-                                    <div className={`pt-1 md:px-12 ${index % 2 === 0 ? 'block' : 'hidden'}`}>
+                                    <div className={`pt-1 md:px-12 ${index % 2 === 0 ? 'block' : 'hidden'}`} data-aos={isMobile ? "fade-left" : "fade-right"} data-aos-anchor-placement="center-bottom">
                                         <div className="pl-8 md:pl-0">
                                             <span className="text-sm font-bold text-ocean font-body">{exp.date}</span>
                                             <h3 className="text-xl font-bold text-ghost-white font-heading tracking-tight">{exp.title}</h3>
@@ -54,7 +69,7 @@ function Timeline() {
                                     <div className="hidden md:block"></div>
 
                                     {/* Right Side Content (Odd indices) */}
-                                    <div className={`pt-1 md:px-12 ${index % 2 !== 0 ? 'block' : 'hidden'}`}>
+                                    <div className={`pt-1 md:px-12 ${index % 2 !== 0 ? 'block' : 'hidden'}`} data-aos="fade-left" data-aos-anchor-placement="center-bottom">
                                         <div className="pl-8 md:pl-0">
                                             <span className="text-sm font-bold text-ocean font-body">{exp.date}</span>
                                             <h3 className="text-xl font-bold text-ghost-white font-heading tracking-tight">{exp.title}</h3>

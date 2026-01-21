@@ -19,24 +19,6 @@ export function UpdateTitleOnScroll() {
     };
 
     if (typeof window !== 'undefined') {
-      const animationObserver = new IntersectionObserver(
-        (entries, observer) => {
-          entries.forEach((entry) => {
-            if (!entry.isIntersecting) return;
-
-            const el = entry.target as HTMLElement;
-
-            const delay = el.dataset.delay || "0";
-            el.style.setProperty("--animate-delay", `${delay}s`);
-
-            el.classList.add("animate__animated", "animate__fadeInUp");
-            observer.unobserve(el); // animate ONCE
-          });
-        },
-        {
-          threshold: 0.15
-        }
-      );
 
       const titleObserver = new IntersectionObserver(
         (entries) => {
@@ -66,14 +48,12 @@ export function UpdateTitleOnScroll() {
       const sections = document.querySelectorAll<HTMLElement>(".sectionRow");
       sections.forEach((section, index) => {
         section.dataset.delay = (index * 0.3).toString(); // stagger 0.2s per section
-        animationObserver.observe(section);
         titleObserver.observe(section);
       });
     });
 
     return () => {
       titleObserver.disconnect();
-      animationObserver.disconnect();
     };
     }
 

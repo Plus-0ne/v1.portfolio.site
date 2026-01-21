@@ -8,8 +8,16 @@ import { UpdateTitleOnScroll } from './hooks/UpdateTitleOnScroll';
 import './index.css';
 import './App.css';
 import "animate.css";
-
+import "aos/dist/aos.css";
+import { useEffect } from 'react';
+import AOS from "aos";
 export default function App() {
+
+  useEffect(() => {
+    AOS.init({
+      duration: 1000, // animation duration in ms
+    });
+  }, []);
 
   UpdateTitleOnScroll();
 

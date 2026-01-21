@@ -4,7 +4,7 @@ import smMyPic from '../assets/2x2_pic_200x200.webp';
 function Hero() {
     return (
         <section id='home' className="relative w-full pt-20 pb-20 lg:pt-50 lg:pb-55  transition-colors duration-300 mt-16 sectionRow section-primary">
-            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8" data-aos="fade-up" data-aos-anchor-placement="center-bottom">
 
                 {/* Added items-center to the parent so the image and text align vertically */}
                 <div className="flex flex-col items-center justify-center lg:flex-row lg:gap-12">

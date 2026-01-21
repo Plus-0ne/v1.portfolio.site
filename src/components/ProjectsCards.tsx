@@ -1,8 +1,20 @@
+import { useEffect, useState } from "react";
 import Card from "./Card";
 import loungeImage from "../assets/img/Screenshot 2026-01-08 233807.webp";
 import resortMapImage from "../assets/img/Screenshot 2026-01-08 233517.webp";
-function ProjectsCards() {
 
+function ProjectsCards() {
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    // runs only in the browser
+    const checkMobile = () => setIsMobile(window.innerWidth < 768);
+
+    checkMobile(); // initial check
+    window.addEventListener("resize", checkMobile);
+
+    return () => window.removeEventListener("resize", checkMobile);
+  }, []);
   const projects = [
     {
       title: "Social Media Platform",
@@ -25,8 +37,8 @@ function ProjectsCards() {
   ];
 
   return (
-    <section id="projectCards" className="py-35 sectionRow bg-navy-deep animate__delay-1s">
-      <div className="max-w-7xl mx-auto px-4">
+    <section id="projectCards" className="py-35 sectionRow bg-navy-deep">
+      <div className="max-w-7xl mx-auto px-4" data-aos="fade-up" data-aos-anchor-placement={isMobile ? "center-bottom" : "top-center"} data-aos-anchor="#projectCards">
         <h2 className="text-3xl font-semibold text-center mb-16 text-ghost-white font-heading tracking-tight">Featured Projects</h2>
 
         {/* The Grid */}
