@@ -17,6 +17,7 @@ export default function App() {
     AOS.init({
       duration: 1000, // animation duration in ms
     });
+    // AOS.refresh();
   }, []);
 
   UpdateTitleOnScroll();

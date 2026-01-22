@@ -46,7 +46,7 @@ export default function CardProjectsDrawer({ open, onClose, title, description, 
                             {/* Header */}
                             <div className="flex items-center justify-between p-10 border-b">
                                 <DialogTitle className="text-xl font-semibold tracking-tight font-heading">{title}</DialogTitle>
-                                <button onClick={onClose} className="text-lg">✕</button>
+                                <button onClick={onClose} className="text-lg cursor-pointer">✕</button>
                             </div>
 
                             {/* Content */}
