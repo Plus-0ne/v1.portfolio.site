@@ -37,9 +37,10 @@ const ContactForm = () => {
                 Contact Me
             </h2>
             <form ref={formRef} onSubmit={sendEmail} className="space-y-4 font-body tracking-wide">
+                <Input type="hidden" name="title" value="Visitor's email"/>
                 <Input
                     type="text"
-                    name="user_name"
+                    name="name"
                     placeholder="Your Name"
                     required
                     className="w-full px-5 py-3 rounded focus:outline-none border border-ghost-white-hover bg-ghost-white-hover text-slate-900
