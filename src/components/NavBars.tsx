@@ -7,15 +7,20 @@ function NavBars() {
     return (
         <nav className="shadow-md w-full fixed z-50 bg-navy-deep">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                <div className="flex justify-end h-16 items-center">
+                <div className="flex justify-between h-16 items-center">
                     
+                    <h2 className="text-ghost-white font-medium font-heading">
+                        <a href="#home" className="text-ghost-white">
+                            RC<span className="text-ocean"> dev</span>
+                        </a>
+                    </h2>
 
                     {/* Desktop Menu */}
                     <div className="hidden md:flex space-x-8 font-body tracking-wide">
-                        <a href="#home" className="text-ghost-white hover:text-ocean-hover font-medium">Home</a>
-                        <a href="#projectCards" className="text-ghost-white hover:text-ocean-hover font-medium">Projects</a>
-                        <a href="#tech" className="text-ghost-white hover:text-ocean-hover font-medium">Tech Stack</a>
-                        <a href="#timeline" className="text-ghost-white hover:text-ocean-hover font-medium">Timeline</a>
+                        <a href="#home" className="text-ghost-white hover:text-ocean-hover">Home</a>
+                        <a href="#projectCards" className="text-ghost-white hover:text-ocean-hover">Projects</a>
+                        <a href="#tech" className="text-ghost-white hover:text-ocean-hover">Tech Stack</a>
+                        <a href="#timeline" className="text-ghost-white hover:text-ocean-hover">Timeline</a>
                     </div>
 
                     {/* Mobile Menu Button */}

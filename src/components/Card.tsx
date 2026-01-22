@@ -1,4 +1,15 @@
-function Card({ title, description, tags, img, link }: { title: string, description: string, tags: string[], img: string, link: string }) {
+import { useEffect, useState } from "react";
+import CardProjectsDrawer from "./CardProjectsDrawer";
+
+function Card({ title, description, key_features, tags, img, link }: { title: string, description: string,key_features : string[], tags: string[], img: string, link: string }) {
+
+    const [open, setOpen] = useState(false);
+
+    const [mounted, setMounted] = useState(false);
+
+    useEffect(() => setMounted(true), []);
+
+    if (!mounted) return null; // Prevent SSR rendering
 
     return (
         <div className="group relative bg-prussian border border-baltic rounded-2xl overflow-hidden hover:shadow-xl transition-all duration-300 hover:scale-105 cursor-pointer">
@@ -37,15 +48,26 @@ function Card({ title, description, tags, img, link }: { title: string, descript
                             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 5l7 7-7 7"></path>
                         </svg>
                     </a>
-                    {/* <a href={link} className="mt-5 inline-flex items-center bg-ghost-white text-slate-950 font-semibold text-sm cursor-pointer px-4 py-2 rounded-lg transition-all duration-300 hover:bg-ghost-white-hover hover:text-slate-950 hover:w-auto" target="_blank" aria-label={`Visit this page ${title}`}>
+                    <a onClick={(e) => {e.preventDefault(); setOpen(true)}} href="#" className="mt-5 inline-flex items-center bg-ghost-white text-slate-950 font-semibold text-sm cursor-pointer px-4 py-2 rounded-lg transition-all duration-300 hover:bg-ghost-white-hover hover:text-slate-950 hover:w-auto" aria-label={`More details for this page ${title}`}>
                         <span>More details</span>
                         <svg className="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 5l7 7-7 7"></path>
                         </svg>
-                    </a> */}
+                    </a>
                 </div>
             </div>
+
+            <CardProjectsDrawer open={open}
+                onClose={() => setOpen(false)}
+                title={title}
+                description={description}
+                key_features={key_features}
+                techStack={tags}
+                links={{ live: link}}
+            />
         </div>
+
+
     );
 }
 
