@@ -21,6 +21,7 @@ function NavBars() {
                         <a href="#projectCards" className="text-ghost-white hover:text-ocean-hover">Projects</a>
                         <a href="#tech" className="text-ghost-white hover:text-ocean-hover">Tech Stack</a>
                         <a href="#timeline" className="text-ghost-white hover:text-ocean-hover">Timeline</a>
+                        <a href="#footer" className="text-ghost-white hover:text-ocean-hover">Contact me</a>
                     </div>
 
                     {/* Mobile Menu Button */}
@@ -57,6 +58,9 @@ function NavBars() {
                         </a>
                         <a href="#timeline" className="block px-3 py-2 text-ghost-white hover:text-ocean-hover rounded-md">
                             Timeline
+                        </a>
+                        <a href="#footer" className="block px-3 py-2 text-ghost-white hover:text-ocean-hover rounded-md">
+                            Contact me
                         </a>
                         
                     </div>

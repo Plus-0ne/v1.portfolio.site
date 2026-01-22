@@ -32,7 +32,7 @@ const ContactForm = () => {
     };
 
     return (
-        <div className="max-w-lg mx-auto p-6 lg:p-9 border border-baltic rounded shadow text-slate-900 bg-ghost-white">
+        <div className="max-w-lg mx-auto p-6 lg:p-9 border border-baltic rounded shadow text-slate-900 bg-ghost-white-hover">
             <h2 className="text-2xl font-semibold text-center mb-4 font-heading tracking-tight">
                 Contact Me
             </h2>
@@ -41,9 +41,9 @@ const ContactForm = () => {
                 <Input
                     type="text"
                     name="name"
-                    placeholder="Your Name"
+                    placeholder="Name"
                     required
-                    className="w-full px-5 py-3 rounded focus:outline-none border border-ghost-white-hover bg-ghost-white-hover text-slate-900
+                    className="w-full px-5 py-3 rounded focus:outline-none border border-ghost-white-hover bg-slate-300 text-slate-900
                 data-focus:border data-focus:border-baltic 
                 data-hover:shadow"
                     autoComplete="off"
@@ -51,25 +51,25 @@ const ContactForm = () => {
                 <Input
                     type="email"
                     name="user_email"
-                    placeholder="Your Email"
+                    placeholder="Email address"
                     required
-                    className="w-full px-5 py-3 rounded focus:outline-none border border-ghost-white-hover bg-ghost-white-hover text-slate-900
+                    className="w-full px-5 py-3 rounded focus:outline-none border border-ghost-white-hover bg-slate-300 text-slate-900
                 data-focus:border data-focus:border-baltic 
                 data-hover:shadow"
                     autoComplete="off"
                 />
                 <Textarea
                     name="message"
-                    placeholder="Your Message"
+                    placeholder="Message"
                     required
-                    className="w-full px-5 py-3 rounded focus:outline-none border border-ghost-white-hover bg-ghost-white-hover text-slate-900
+                    className="w-full px-5 py-3 rounded focus:outline-none border border-ghost-white-hover bg-slate-300 text-slate-900
                 data-focus:border data-focus:border-baltic 
                 data-hover:shadow"
                     autoComplete="off"
                 />
                 <Button
                     type="submit"
-                    className="bg-black text-white px-4 py-2 rounded disabled:opacity-50"
+                    className="bg-ocean text-slate-900 py-4 px-6 rounded disabled:opacity-50 font-body tracking-wide"
                     disabled={status === "sending"}
                 >
                     {status === "sending" ? "Sending..." : "Send"}

@@ -42,10 +42,10 @@ function Hero() {
                         </p>
 
                         <div className="mt-10 flex flex-col sm:flex-row justify-center lg:justify-start gap-4 font-body tracking-wide">
-                            <a className="px-8 py-4 bg-ocean hover:bg-ocean-hover text-slate-950 font-semibold rounded-lg transition-all shadow-lg hover:scale-105 cursor-pointer" href='#projectCards'>
+                            <a className="px-6 py-4 bg-ocean hover:bg-ocean-hover text-slate-950 font-semibold rounded-lg transition-all shadow-lg hover:scale-105 cursor-pointer" href='#projectCards'>
                                 View Projects
                             </a>
-                            <a className="px-8 py-4 bg-ghost-white hover:bg-ghost-white-hover text-slate-950 font-semibold rounded-lg transition-all shadow-lg hover:scale-105 cursor-pointer" href='#footer'>
+                            <a className="px-6 py-4 bg-ghost-white hover:bg-ghost-white-hover text-slate-950 font-semibold rounded-lg transition-all shadow-lg hover:scale-105 cursor-pointer" href='#footer'>
                                 Contact me
                             </a>
                         </div>

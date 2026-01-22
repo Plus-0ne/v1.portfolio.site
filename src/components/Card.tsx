@@ -42,13 +42,13 @@ function Card({ title, description, key_features, tags, img, link }: { title: st
                 </p>
 
                 <div className="flex flex-row gap-2 mt-5">
-                    <a href={link} className="mt-5 inline-flex items-center bg-ocean text-slate-950 font-semibold text-sm cursor-pointer px-4 py-2 rounded-lg transition-all duration-300 hover:bg-ocean-hover hover:text-slate-950 hover:w-auto" target="_blank" aria-label={`Visit this page ${title}`}>
+                    <a href={link} className="mt-5 inline-flex items-center bg-ocean text-slate-950 font-semibold text-sm cursor-pointer px-5 py-3 rounded transition-all duration-300 hover:bg-ocean-hover hover:text-slate-950 hover:w-auto" target="_blank" aria-label={`Visit this page ${title}`}>
                         <span>View project</span>
                         <svg className="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 5l7 7-7 7"></path>
                         </svg>
                     </a>
-                    <a onClick={(e) => {e.preventDefault(); setOpen(true)}} href="#" className="mt-5 inline-flex items-center bg-ghost-white text-slate-950 font-semibold text-sm cursor-pointer px-4 py-2 rounded-lg transition-all duration-300 hover:bg-ghost-white-hover hover:text-slate-950 hover:w-auto" aria-label={`More details for this page ${title}`}>
+                    <a onClick={(e) => {e.preventDefault(); setOpen(true)}} href="#" className="mt-5 inline-flex items-center bg-ghost-white text-slate-950 font-semibold text-sm cursor-pointer px-5 py-3 rounded transition-all duration-300 hover:bg-ghost-white-hover hover:text-slate-950 hover:w-auto" aria-label={`More details for this page ${title}`}>
                         <span>More details</span>
                         <svg className="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 5l7 7-7 7"></path>

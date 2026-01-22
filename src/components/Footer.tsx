@@ -9,11 +9,11 @@ function Footer() {
   return (
     <footer id="footer" className="w-full section-primary pt-35 pb-10 px-4 lg:px-0">
       <div className="max-w-6xl mx-auto">
-        <div className="flex flex-col-reverse md:flex-row justify-between items-center gap-8 pb-12">
+        <div className="flex flex-col-reverse md:flex-row justify-between items-center lg:items-start gap-8 pb-12">
 
           {/* Logo & Tagline */}
           <div className="space-y-4">
-            <div className="space-y-4 text-center">
+            <div className="space-y-4 text-center lg:text-start">
               <h2 className="text-2xl font-bold text-ghost-white font-heading tracking-tight">
                 RC<span className="text-ocean"> dev</span>
               </h2>
@@ -23,9 +23,9 @@ function Footer() {
             </div>
             <div className="space-y-4">
               {/* Social Links */}
-              <div className="flex flex-col space-y-4 text-center">
+              <div className="flex flex-col space-y-4 text-center lg:text-start">
                 <h3 className="text-ghost-white font-semibold uppercase font-heading tracking-wide text-xs">Socials</h3>
-                <div className="flex gap-5 justify-center">
+                <div className="flex gap-5 justify-center lg:justify-start">
                   <a href="https://github.com/Plus-0ne" className="text-ghost-white-inactive hover:text-blue-400 transition-colors" aria-label="Github" target="_blank">
                     <FaGithub className="w-7 h-7" />
                   </a>
