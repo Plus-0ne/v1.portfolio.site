@@ -37,7 +37,7 @@ function Timeline() {
 
     return (
         <section id="timeline" className="py-35 bg-navy-deep sectionRow">
-            <div className="max-w-6xl mx-auto px-4" data-aos="fade-up" data-aos-anchor-placement="center-center">
+            <div className="max-w-6xl mx-auto px-4" data-aos="fade-up" data-aos-anchor-placement="center-bottom">
                 <h2 className="text-3xl font-semibold text-center mb-16 text-ghost-white font-heading tracking-tight">Timeline</h2>
 
                 <div className="relative">
