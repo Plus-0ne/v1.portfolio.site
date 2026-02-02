@@ -22,10 +22,10 @@ function Timeline() {
             description: "Developed and maintained dynamic web applications using Laravel, delivering responsive and accessible front-end interfaces with HTML5, CSS, and JavaScript. Optimized backend logic and database performance for scalable and reliable solutions, while collaborating with team members through Git version control and code reviews."
         },
         {
-            date: "2019 - 2021",
+            date: "2018 - 2022",
             title: "Freelance Full-stack Web Developer",
-            company: "Wercher Solutions and Resources Labor Service Coop",
-            description: "Assisted in the development of PHP-based websites and internal tools, providing maintenance, bug fixes, and feature enhancements for client projects. Collaborated closely with designers and stakeholders to deliver solutions that met project requirements and client expectations.",
+            company: "Self-employed",
+            description: "Built and deployed multiple web applications using PHP, CodeIgniter 3, MySQL, Bootstrap, jQuery. Provided maintenance, bug fixes, and feature enhancements for client projects. Collaborated with designers and stakeholders to meet functional and design requirements.",
         },
         {
             date: "2017 - 2018",
